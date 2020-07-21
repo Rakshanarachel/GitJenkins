@@ -1,0 +1,2306 @@
+{
+	"info": {
+		"_postman_id": "93609cf0-2d93-468a-8610-50eeafdf31cc",
+		"name": "Notification API Template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fawateer Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawateer_Confirm\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawateer Fail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawateer_Fail\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\"fieldName\":\"failureReason\",\r\n\"fieldText\":\"Due to Insufficient balance\",\r\n\"sensitive\":false\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"payeeIBAN\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawateer_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawateer_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawateer_Submit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawateer_Submit\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri+ Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"FawriPlus_Fail\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri+ Fail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"FawriPlus_Fail\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FawriPlus Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"FawriPlus_Fail\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri Submit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip,deflate",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-apisecret",
+						"value": "X7NvNQzQW58BNKdc",
+						"type": "text"
+					},
+					{
+						"key": "customerId",
+						"value": "1186014",
+						"type": "text"
+					},
+					{
+						"key": "source",
+						"value": "mobile",
+						"type": "text"
+					},
+					{
+						"key": "x-apikey",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt",
+						"type": "text"
+					},
+					{
+						"key": "userId",
+						"value": "mavericila+luck@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "trackingId",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"FawriPlus_Fail\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawri_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri Fail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawri_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fawri Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Fawri_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Internal Debit Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Internal_Debit_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Internal Credit Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Internal_Credit_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SWIIFT Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"SWIIFT_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Domestic_Other_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Domestic_Other_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATM_Success_Domestic",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"ATM_Success_Domestic\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ATM_Success_Int",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"ATM_Success_Int\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//cardLast4Digits\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POS_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"ATM_Success_Int\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit_Cash_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"ATM_Success_Int\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "R_ATM_Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"R_ATM_Confirm\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "R_POS_Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"R_POS_Confirm\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "R_Deposit_Cash_Confirm",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"R_Deposit_Cash_Confirm\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manual_Credit_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Manual_Credit_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NSF_CARD_TRANSACTION",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"NSF_CARD_TRANSACTION\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"ValueDate\",\r\n\r\n    \"fieldText\":\"16 July 2020\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"merchantName\",\r\n\r\n    \"fieldText\":\"Jacob smith\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n//merchantName\r\n{\r\n\r\n    \"fieldName\": \"cardLast4Digits\",\r\n\r\n    \"fieldText\":\"4501\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"beneficiaryName\",\r\n\r\n    \"fieldText\":\"Rachel R\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"billerName\",\r\n\r\n    \"fieldText\": \"RV Real Estate Company S.P.C\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"15 Jun 2020 17:31\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SALARY_CREDIT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"SALARY_CREDIT\",\r\n\r\n \r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Donate_Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Donate_Success\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n  {\r\n        \"fieldName\": \"charityName\",\r\n\r\n    \"fieldText\":\"ZAKAT\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n        \"fieldName\": \"charityPurpose\",\r\n\r\n    \"fieldText\":\"child care\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Donate_Failure",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"Donate_Failure\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n  {\r\n        \"fieldName\": \"charityName\",\r\n\r\n    \"fieldText\":\"ZAKAT\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n        \"fieldName\": \"charityPurpose\",\r\n\r\n    \"fieldText\":\"child care\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"failureReason\",\r\n\r\n    \"fieldText\": \"Due to non business hour\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"13 July 2020 14:12\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FawriPlus_Reversal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip,deflate"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-apisecret",
+						"type": "text",
+						"value": "X7NvNQzQW58BNKdc"
+					},
+					{
+						"key": "customerId",
+						"type": "text",
+						"value": "1186014"
+					},
+					{
+						"key": "source",
+						"type": "text",
+						"value": "mobile"
+					},
+					{
+						"key": "x-apikey",
+						"type": "text",
+						"value": "yyVU9KmuawEXtetMXel6PZbv8YQyrOgt"
+					},
+					{
+						"key": "userId",
+						"type": "text",
+						"value": "mavericila+luck@gmail.com"
+					},
+					{
+						"key": "trackingId",
+						"type": "text",
+						"value": "0c4fe255-a389-451e-9355-2a79e29f1184"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"type\": \"sms\",\r\n\r\n    \"templateCode\": \"FawriPlus_Reversal\",\r\n\r\n \r\n\r\n \r\n\r\n\"placeholderReplacements\" : [{\r\n\r\n    \"fieldName\": \"transactionCurrency\",\r\n\r\n    \"fieldText\":\"BHD\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionAmount\",\r\n\r\n    \"fieldText\": \"100.00\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"accountLast4Digits\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"transactionDateTime\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"accountCurrency\",\r\n\r\n    \"fieldText\": \"1101\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n\r\n \r\n\r\n{\r\n\r\n    \"fieldName\": \"transactionRef\",\r\n\r\n    \"fieldText\": \"ABCOFTS10615T006\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"TransactionDate\",\r\n\r\n    \"fieldText\": \"13 July 2020 \",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n{\r\n\r\n    \"fieldName\": \"TransactionTime\",\r\n\r\n    \"fieldText\": \"18:50\",\r\n\r\n    \"sensitive\": false\r\n\r\n},\r\n\r\n{\r\n\r\n    \"fieldName\": \"remainingBalance\",\r\n\r\n    \"fieldText\": \"50000.502\",\r\n\r\n    \"sensitive\": false\r\n\r\n}]\r\n\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "https://gateway.uat.ilabank.com/api/v1/notifications?language=en&unit=neo",
+					"protocol": "https",
+					"host": [
+						"gateway",
+						"uat",
+						"ilabank",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"notifications"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "unit",
+							"value": "neo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
