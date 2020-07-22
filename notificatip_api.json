@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Fawateer Confirm",
+			"name": "FawateerConfirm",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -170,7 +170,7 @@
 			"response": []
 		},
 		{
-			"name": "Fawateer_Success",
+			"name": "FawateerSuccess",
 			"request": {
 				"method": "POST",
 				"header": [
